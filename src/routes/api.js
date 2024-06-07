@@ -2,6 +2,15 @@
 const express = require("express");
 const router = express.Router();
 
+//クロスオリジンからのリクエストを許可するように、CORSヘッダを設定してみる
+router.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  if(req.method === "OPTIONS" ){
+    res.header("Access-Control-Allow-Headers", "X-Token");
+  }
+  next();
+});
+
 router.get("/", (req, res) => {
   res.setHeader("X-Timestamp", Date.now());
   let message = req.query.message;
