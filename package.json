@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/kusaka0324/frontend-security/issues"
   },
-  "homepage": "https://github.com/kusaka0324/frontend-security#readme"
+  "homepage": "https://github.com/kusaka0324/frontend-security#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

